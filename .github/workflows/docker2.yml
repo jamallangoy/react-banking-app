@@ -26,7 +26,7 @@ steps:
     run: echo ${{secrets.DOCKERHUB_TOKEN}} | docker login -u ${{ secrets.DOCKERHUB_USERNAME }}
   - name: Get the version
   - id: vars
-    run: echo ::set-output name=tag::$(echo ${GITHUB_REF:1})
+    run: echo ::set-output name=tag::$(echo ${GITHUB_REF:1}) 
   - name: Build the tagged Docker Image
     run: docker build - jangoy/react-banking-app007 .
   - name: Push the tagged Docker image
