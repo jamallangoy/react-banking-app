@@ -10,9 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import Withdraw from './components/Withdraw';
 // import AllData from './components/AllData';
 // import Context from './components/Context'
-import Home from './components/Home'
 import Template from './components/Template'
-import { api } from './api';
 
 
 const App = (props) => {
